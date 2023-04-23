@@ -21,3 +21,11 @@ wget http://csapp.cs.cmu.edu/3e/attacklab.pdf
 wget http://csapp.cs.cmu.edu/3e/target1.tar
 tar xvf target1.tar
 cd ..
+
+cd architecturelab
+#wget http://csapp.cs.cmu.edu/im/labs/archlab.tar
+wget http://csapp.cs.cmu.edu/3e/README-archlab
+wget http://csapp.cs.cmu.edu/3e/archlab.pdf
+wget http://csapp.cs.cmu.edu/3e/archlab-handout.tar
+tar xvf archlab-handout.tar
+cd ..
