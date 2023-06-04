@@ -1,6 +1,6 @@
 # Comment this out if you don't have Tcl/Tk on your system
 
-#GUIMODE=-DHAS_GUI
+GUIMODE=-DHAS_GUI
 
 # Modify the following line so that gcc can find the libtcl.so and
 # libtk.so libraries on your system. You may need to use the -L option
@@ -13,7 +13,7 @@ TKLIBS=-L/usr/lib -ltk -ltcl
 # header files on your system. Comment this out if you don't have
 # Tcl/Tk.
 
-TKINC=-isystem /usr/include/tcl8.5
+TKINC=-isystem /usr/include/tcl8.6
 
 ##################################################
 # You shouldn't need to modify anything below here
@@ -24,8 +24,8 @@ TKINC=-isystem /usr/include/tcl8.5
 # are currently assigned in seq/Makefile and pipe/Makefile.
 all:
 	(cd misc; make all)
-	(cd pipe; make all GUIMODE=$(GUIMODE) TKLIBS="$(TKLIBS)" TKINC="$(TKINC)")
-	(cd seq; make all GUIMODE=$(GUIMODE) TKLIBS="$(TKLIBS)" TKINC="$(TKINC)")
+	(cd pipe; make all GUIMODE=$(GUIMODE) "CFLAGS += -DUSE_INTERP_RESULT" TKLIBS="$(TKLIBS)" TKINC="$(TKINC)")
+	(cd seq; make all GUIMODE=$(GUIMODE)  "CFLAGS += -DUSE_INTERP_RESULT" TKLIBS="$(TKLIBS)" TKINC="$(TKINC)")
 	(cd y86-code; make all)
 
 clean:
