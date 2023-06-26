@@ -29,3 +29,11 @@ wget http://csapp.cs.cmu.edu/3e/archlab.pdf
 wget http://csapp.cs.cmu.edu/3e/archlab-handout.tar
 tar xvf archlab-handout.tar
 cd ..
+
+cd shelllab
+# wget http://csapp.cs.cmu.edu/im/labs/shlab.tar
+wget http://csapp.cs.cmu.edu/3e/README-shlab
+wget http://csapp.cs.cmu.edu/3e/shlab.pdf
+wget http://csapp.cs.cmu.edu/3e/shlab-handout.tar
+tar xvf shlab-handout.tar
+cd ..
