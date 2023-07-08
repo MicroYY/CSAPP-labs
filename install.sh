@@ -37,3 +37,12 @@ wget http://csapp.cs.cmu.edu/3e/shlab.pdf
 wget http://csapp.cs.cmu.edu/3e/shlab-handout.tar
 tar xvf shlab-handout.tar
 cd ..
+
+
+cd malloclab
+# wget http://csapp.cs.cmu.edu/im/labs/malloclab.tar
+wget http://csapp.cs.cmu.edu/3e/README-malloclab
+wget http://csapp.cs.cmu.edu/3e/malloclab.pdf
+wget http://csapp.cs.cmu.edu/3e/malloclab-handout.tar
+tar xvf malloclab-handout.tar
+cd ..
